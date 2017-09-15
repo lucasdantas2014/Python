@@ -1,0 +1,15 @@
+resultado = 0
+
+def somaValores(x,resultado):
+    resultado = resultado + x
+    if (x == 0):
+        return resultado
+    return somaValores(x - 1,resultado)
+
+x = int(input("Digite o valor para x:"))
+print(somaValores(x,resultado))
+
+
+'''
+Escreva uma função regressiva que retorna a soma de n até zero
+'''

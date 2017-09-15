@@ -1,0 +1,16 @@
+import sqlite3
+
+conectar = sqlite3.connect("lucas.db")
+cursor = conectar.cursor()
+
+cursor.execute("""
+CREATE TABLE lucas(
+    Nome TEXT NOT NULL, 
+    IDADE INTEGER
+);
+""")
+
+print("Tabela Pronta")
+
+                    
+conectar.close()
